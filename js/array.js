@@ -16,6 +16,26 @@ let imageAr = [
       currentIndex = 0;
     }
     document.getElementById('myImages').setAttribute('src', imageAr[currentIndex]);
+    
   }
   
   setInterval(chgImage, 2000);
+
+  function nextImage(){
+//Your logic to move to the next image
+document.getElementById('myImages').addEventListener('click', function(ev) /* your function here */{})
+  }
+
+  function showMessage() {
+    console.info('This message is shown after 3 seconds');
+  }
+  
+  setTimeout(showMessage, 3000);
+
+  let intervalId = setInterval(chgImage, 2000);
+
+// Stop the interval after 10 seconds
+setTimeout(function() {
+  clearInterval(intervalId);
+  console.info('Image rotation stopped');
+}, 10000);
